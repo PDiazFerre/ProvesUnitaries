@@ -9,12 +9,43 @@ package myutils;
  * @author paudc
  */
 public class MyUtils {
+public static String inverteix (String cadena)
+{
+    String resultat="";
+    return resultat;
+}
+/**
+ *
+ * @param day int dia del naixement
+ * @param month int  mes del naixement
+ * @param year int any del naixement
+ * @return edat de la persona, per edat>150 retorna -1, per dates impossibles retorna -2
+ *
+ */
+public static int edat (int day, int month, int year)
+{
+    int resultat=0;
+    return resultat;
+}
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+
+/**
+ *
+ * @param numero número del que es calcula el factorial
+ * @return retorna el factorial d'un número. Si el nombre es negatiu retorna -1.
+ */
+public static double factorial (double numero) {
+ 
+if (numero==0)
+return 1;
+else
+{
+    double resultat = numero * factorial(numero-1);
+    return resultat;
+}
+}
+
+    static void main(String[] args) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    
 }
