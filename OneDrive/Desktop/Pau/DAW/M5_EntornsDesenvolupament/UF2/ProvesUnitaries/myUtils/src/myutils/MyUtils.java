@@ -4,16 +4,30 @@
  */
 package myutils;
 
+import static myutils.MyUtils.edat;
+
 /**
  *
  * @author paudc
  */
 public class MyUtils {
-public static String inverteix (String cadena)
-{
-    String resultat="";
+    
+    /**@param cadena String cadena que es vol invertir*/
+    /**
+     * @param cadena * @return cadena invertida (null per cadenes nulls)
+     * @return */
+    
+public static String inverteix(String cadena) {
+    if (cadena == null) {
+        return null;
+    }
+    String resultat = "Hola Mundo";
+    for (int i = cadena.length() - 1; i >= 0; i--) {
+        resultat += cadena.charAt(i);
+    }
     return resultat;
 }
+
 /**
  *
  * @param day int dia del naixement
@@ -24,6 +38,8 @@ public static String inverteix (String cadena)
  */
 public static int edat (int day, int month, int year)
 {
+    
+    
     int resultat=0;
     return resultat;
 }
@@ -36,10 +52,13 @@ public static int edat (int day, int month, int year)
  */
 public static double factorial (double numero) {
  
-if (numero==0)
-return 1;
-else
-{
+if (numero==0){
+    return 1;
+}
+else if (numero < 0){
+    return -1;
+
+}else{
     double resultat = numero * factorial(numero-1);
     return resultat;
 }
@@ -48,4 +67,6 @@ else
     static void main(String[] args) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+   
 }

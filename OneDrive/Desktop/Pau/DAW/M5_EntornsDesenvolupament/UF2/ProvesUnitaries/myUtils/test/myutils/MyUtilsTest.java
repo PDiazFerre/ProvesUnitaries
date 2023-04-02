@@ -37,18 +37,6 @@ public class MyUtilsTest {
     }
 
     /**
-     * Test of main method, of class MyUtils.
-     */
-    @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        MyUtils.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
      * Test of inverteix method, of class MyUtils.
      */
     @Test
@@ -88,6 +76,18 @@ public class MyUtilsTest {
         double expResult = 0.0;
         double result = MyUtils.factorial(numero);
         assertEquals(expResult, result, 0);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of main method, of class MyUtils.
+     */
+    @Test
+    public void testMain() {
+        System.out.println("main");
+        String[] args = null;
+        MyUtils.main(args);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
