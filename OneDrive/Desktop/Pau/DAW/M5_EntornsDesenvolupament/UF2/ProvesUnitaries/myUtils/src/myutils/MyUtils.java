@@ -4,6 +4,9 @@
  */
 package myutils;
 
+import static java.time.Instant.now;
+import java.time.LocalDate;
+import java.time.Period;
 import static myutils.MyUtils.edat;
 
 /**
@@ -38,12 +41,25 @@ public static String inverteix(String cadena) {
  */
 public static int edat (int day, int month, int year)
 {
+    try{
+    LocalDate naixement = LocalDate.of(day, month, year); 
+    LocalDate avui = LocalDate.now();
     
+    Period diferencia = Period.between(naixement, avui);
     
-    int resultat=0;
-    return resultat;
-}
+    int edat = diferencia.getYears();
+    
+    if (edat > 150){
+        return -1;
+    }
+    
+    return edat;   
+    
+    }catch(Exception e){
+        return -2;
+    }
 
+}
 
 /**
  *
@@ -68,5 +84,5 @@ else if (numero < 0){
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-   
+      
 }

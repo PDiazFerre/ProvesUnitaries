@@ -42,8 +42,8 @@ public class MyUtilsTest {
     @Test
     public void testInverteix() {
         System.out.println("inverteix");
-        String cadena = "";
-        String expResult = "";
+        String cadena = "Hola Mundo";
+        String expResult = "odnuM aloH";
         String result = MyUtils.inverteix(cadena);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -72,8 +72,8 @@ public class MyUtilsTest {
     @Test
     public void testFactorial() {
         System.out.println("factorial");
-        double numero = 0.0;
-        double expResult = 0.0;
+        double numero = 6.0;
+        double expResult = 720.0;
         double result = MyUtils.factorial(numero);
         assertEquals(expResult, result, 0);
         // TODO review the generated test code and remove the default call to fail.
