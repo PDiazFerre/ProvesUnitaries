@@ -56,10 +56,10 @@ public class MyUtilsTest {
     @Test
     public void testEdat() {
         System.out.println("edat");
-        int day = 0;
-        int month = 0;
-        int year = 0;
-        int expResult = 0;
+        int day = 4;
+        int month = 12;
+        int year = 1997;
+        int expResult = 25;
         int result = MyUtils.edat(day, month, year);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
